@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            position: relative;
+        }
+
+        /* a:hover {
+            color: white;
+        } */
+
+
+
+
+
+        #bimg {
+            background-image: url("https://cdn.wallpapersafari.com/91/85/Jv97qt.jpg");
+            height: 740px;
+            /* width: 100%; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+            color: rgb(234, 162, 29);
+            font-size: 60px;
+            padding-bottom: 160px;
+        }
+
+        #bimg1 {
+            background-image: url("http://4.bp.blogspot.com/-cQ4XnoW4Ysc/Tzbg3Jh25VI/AAAAAAAAA74/xFjSDny2SqU/s1600/21.Jpg");
+            height: 208px;
+            background-size: cover;
+            margin-top: 50px;
+
+            padding-left: 120px;
+
+        }
+
+        .mohan:hover {
+            background-color:ghostwhite;
+        }
+
+         .sticky {
+            position: fixed;
+             top: 0; 
+            width: 100%;
+            background-color: blue; 
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            background-color: red;
+            height: 3px;
+            width: 0%;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+
+
+        }
+
+        a:hover:after {
+            width: 100%;
+        }
+
+        .text a:hover {
+            color: orange !important;
+        }
+        .r:hover{
+            transform: scale(1.2);
+            transition: all 0.5s linear;
+        }
+        .ca{
+            box-shadow: 3px 3px 3px 3px grey;
+        }
+        
+        /* .btn{
+            position: relative;
+        }
+        .btn:hover{
+            background-color:red;
+        }
+        .btn::before{
+            content: "";
+            position:absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index:-1;
+            transition: transform 0.5s;
+            transform-origin:0 0;
+            transition-timing-function:cubic-bezier(0.5,1.6,0.4,0.7);
+
+
+        }
+        .btn1::before{
+            transform: scaleY(0);
+        }
+        .btn1:hover::before{
+            transform: scaleY(1);
+        } */
+        
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div class="row sticky ">
+            <div class="col-md-4" style="background-color:blue;">
+                <img src="https://www.code-along.the10xacademy.com/assets/codeThrust/code-along-logos/BG-Purple-1.png"
+                    alt="" width="48%" height="100px" style="padding-left: 60px;">
+            </div>
+
+
+            <div class="col-md-8 text" style="background-color: blue; padding-top: 35px;
+                padding-left: 90px;">
+
+            
+
+                <a href="#home">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#howit">How it works</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- <a href="">Admission Process</a> -->
+                <a href="" data-bs-toggle="modal"
+                data-bs-target="#myModal">  Admission Process</a>
+                <!-- <button type="button" class="btn  " style="color: white; " data-bs-toggle="modal"
+                    data-bs-target="#myModal">
+                    Admission Process
+                </button> -->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#contact">Contact </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </div>
+            </div>
+                
+                <div class="modal " id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h4 class="modal-title">Enroll now for free</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                          
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Name:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Mobile:</label>
+                                    <input type="number" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Email:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>College:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Branch:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Year of Graduation:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Current City:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>How did you kno about us:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+               
+            </div>
+        </div>
+    </div>
+    <div class="row" id="home" >
+        <div class="col-md-12 p-0">
+            <div id="bimg">
+                <p style="padding-top: 185px; padding-left: 205px; font-weight: 500;">India's First Private Mentor Full
+                    Stack</p>
+
+                <p class="text-center" style="line-height: 10px; font-weight: 500;">Fellowship</p>
+
+                <p class="text-center" style="    color: white;
+                padding-top: 58px;
+                font-size: 43px;">1:2 Teacher-Student
+                    Ratio</p>
+
+
+                <p class="text-center" style="color:white; padding-top: 5px; font-size: 35px;">Guranteed 5-40 LPA Jobs
+                </p>
+                <center><button type="button" class="btn btn-warning mohan"
+                        style="width: 200px;height: 60px;font-size: 20px;">Register Now</button></center>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <div class="container" >
+        <div class="row" id="about">
+            <div class="col-md-4">
+                <h3 style="color: blueviolet;margin-top: 100px; font-size:38px;">Learn Directly <br> from <br>
+                    developers
+                    who <br> work at Tier-1 <br> Companies</h3>
+
+                <p style="margin-top:40px ; line-height: 40px;">1:2 Teacher - Student Ratio <br>
+
+                    400+ DSA Problems <br>
+
+                    150+ Code Review Sessions <br>
+
+                    20+ Mock Interviews <br>
+
+                    10+ Real World Projects <br>
+
+                    6 Months - Daily 1:2 Sessions</p>
+
+                <p style="font-weight: 350;font-size: 18px;"> <b>Average Salary Hike</b> &nbsp;&nbsp;80%</p>
+                <input type="range" style="width: 250px;">
+            </div>
+
+            <div class="col-md-4" style="margin-top:100px ;">
+                <img src="https://www.code-along.the10xacademy.com/assets/codeThrust/images/resources/real-world-img-1.jpg"
+                    width="100%">
+            </div>
+            <div class="col-md-4 " style="margin-top: 100px;">
+                <div class="r">
+                <h3 style="display: inline-block;font-size: 50px;padding-left: 70px;">100</h3><i
+                    class="fa-solid fa-hand-holding-hand" style="padding-left: 70px;font-size: 30px;"></i><br><span
+                    style="padding-left: 30px;">% Students hired</span>
+                </div>    
+                <br><br>
+                <hr>
+                <div class="r">
+                <h3 style="display: inline-block;font-size: 50px;padding-left: 70px;">8.2</h3><i
+                    class="fa-solid fa-chalkboard-user" style="padding-left: 70px;font-size: 30px;"></i><br><span
+                    style="padding-left: 30px;">LPA Average CTC</span>
+                </div>    
+                <br><br>
+                <hr>
+                <div class="r">
+                <h3 style="display: inline-block;font-size: 50px;padding-left: 70px;">300</h3><i
+                    class="fa-solid fa-person-burst" style="padding-left: 70px;font-size: 30px;"></i><br><span
+                    style="padding-left: 30px;">+ Hiring Partners</span>
+                </div>
+                <br><br>
+                <hr>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row"  style="background-color:aqua;padding-bottom: 245px;margin-top:70px;padding-top: 30px;">
+        <h1 class="text-center" style="margin-top:70px;font-size: 60px; color: blueviolet;">Discover what others have
+            experienced on this <br>journey</h1>
+
+        <div class="col-md-4" style="padding-left: 120px; padding-top:90px;line-height: 30px;">
+            <div class="card r" style="width: 100%;background-color:lightgoldenrodyellow;">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eligendi,
+                        facere nihil eum laboriosam illum aliquid impedit, voluptas doloremque magnam minus illo placeat
+                        expedita porro quasi autem ipsa consequuntur? NatusQui reprehenderit expedita..</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="padding-left: 80px; padding-top:90px;line-height: 30px;">
+            <div class="card r" style="width: 100%;background-color:lightgoldenrodyellow;">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iusto quia
+                        quasi! Culpa aliquid expedita eveniet laborum quasi possimus repudiandae sint inventore tenetur?
+                        Qui reprehenderit asperiores facere culpa porro expedita.eum laboriosam illum aliquid impedit, voluptas doloremque </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="padding-left: 50px;padding-right: 50px; padding-top:90px;line-height: 35px;">
+            <div class="card r" style="width: 100%;background-color:lightgoldenrodyellow;">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora optio quas
+                        cumque hic consequuntur adipisci repellendus laudantium rem iure fugit debitis, distinctio vero
+                        modi possimus quaerat itaque quibusdam. Earum, excepturi?</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <p class="text-center" style="margin-top: 80px;">INDIA’S MOST</p>
+            <h2 class="text-center" style="line-height:5px;color:blueviolet;">Personalized Tech Interview Prep Program
+            </h2>
+
+            
+            <div class="col-md-4  " style="margin-top: 40px;">
+                
+                <div class="card ca" style="width: 80%; background-color:lightcyan;">
+                    <div class="btn btn1">
+                    <i class="fa-solid fa-lightbulb " style="padding-left: 20px;  padding-top:50px;font-size: 40px;"></i>
+                    <!-- <class="card-img-top" alt="..."> -->
+                    <div class="card-body ">
+                        <h5 class="card-title" style="margin-top: 40px;">Work Experienced Based Learning</h5>
+                        <p class="card-text" style="margin-top: 40px; margin-bottom: 35px;">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nobis omnis distinctio illum temporibus debitis, vitae
+                            possimus ullam quis voluptatem aliquam quaerat deleniti magnam quo quas, enim fugiat nam
+                            consequatur esse? </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-md-4 " style="margin-top: 40px;">
+                <div class="card ca" style="width: 80%;background-color:lightcyan;">
+                    <div class="btn">
+                    <i class="fa-solid fa-lightbulb" style="padding-left: 20px;  padding-top:50px;font-size: 40px;"></i>
+                    <div class="card-body">
+                        <h5 class="card-title" style="margin-top: 40px;">Masters Interview Pattern</h5>
+                        <p class="card-text" style="margin-top: 40px;margin-bottom: 40px">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nobis omnis distinctio illum temporibus debitis, vitae
+                            possimus ullam quis voluptatem aliquam quaerat deleniti magnam quo quas, enim fugiat nam
+                            consequatur esse?</p>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-4 " style="margin-top: 40px;">
+                <div class="card ca" style="width: 80%; background-color:lightcyan;">
+                    <div class="btn">
+                    <i class="fa-solid fa-lightbulb" style="padding-left: 20px;  padding-top:50px;font-size: 40px;"></i>
+                    <div class="card-body">
+                        <h5 class="card-title" style="margin-top: 40px;">Career Services</h5>
+                        <p class="card-text" style="margin-top: 40px;margin-bottom: 35px">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nobis omnis distinctio illum temporibus debitis, vitae
+                            possimus ullam quis voluptatem aliquam quaerat deleniti magnam quo quas, enim fugiat nam
+                            consequatur esse?</p>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="bimg1">
+        <span style="padding-left: 35px;
+            padding-top: 60px;
+            font-size: 38px;
+            color:whitesmoke; font-weight: 500;">Secret Sauce to Cracking<br>
+            FAANG & Tier-1 Interviews</span>
+        <div style="text-align: right; ">
+            <button type="button" class="btn btn-warning mohan"
+                style="width: 150px;height: 60px;font-size: 20px; margin-bottom: 30px;">Apply Now</button>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 70px;line-height: 70px;">
+        <div style="line-height: 100px;">
+        <h2 class="text-center" style="color:blueviolet; font-size:40px">Admission Process</h2>
+
+        
+        <center>
+            <div class="dropdown-center">
+                <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="width: 60%; height: 70px;">
+                    Who Can Apply
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Working professionals
+                            (or)
+                            Fresh Graduates looking for Jobs</a></li>
+                    <li><a class="dropdown-item" href="#">No coding background required</a></li>
+                    <li><a class="dropdown-item" href="#">Eligibility: Must be graduated in 2022 or before</a></li>
+                </ul>
+            </div>
+        </center>
+
+        <center>
+            <div class="dropdown-center" style="padding-top:30px; ;">
+                <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="width: 60%; height: 70px;">
+                    Admission Steps
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Registration</a></li>
+                    <li><a class="dropdown-item" href="#">Session with a Mentor</a></li>
+                    <li><a class="dropdown-item" href="#">Selection for the Main Program.</a></li>
+                </ul>
+            </div>
+        </center>
+    </div>
+    </div>
+
+    <div class="row" id="howit">
+        <div class="col-md-5"
+            style="background-color: aqua; margin-bottom: 50px;margin-top: 80px; padding-bottom: 30px;">
+            <h2 style="padding-left: 85px;
+                font-size: 60px;
+                padding-top: 20px;color: blueviolet;">Income <br>Sharing</h2>
+            <h3 style="padding-left: 85px; ">Agreement</h3>
+
+            <p style="padding-left: 85px;">----------------- <br><b> Our fee plan follows an Income Sharing Agreement to
+                    link our success with your success.</b></p>
+
+            <center> <button type="button" class="btn btn-warning mohan1"
+                    style="width: 150px;height: 60px;font-size: 20px;">Apply Now</button></center>
+        </div>
+
+        <div class="col-md-7" style=" margin-bottom: 50px;margin-top: 80px;background-color: orange;">
+            <h4 style="padding-top: 20px; ">Registration fee</h4>
+            <h2 style="color:blueviolet ; display: inline-block; font-size:48px">₹99,999 </h2><span>+ GST</span>
+            <p> <b>“100% Refund if you want to leave during the 2 week free trial“</b></p>
+
+
+            <div class="row">
+                <div class="col-md-12"
+                    style="background-color: white; padding-bottom: 122px;padding-top: 30px;margin-top: 90px;">
+                    <h3 style="margin-right: 20px;padding-top: 30px;">Post-Placement Fee</h3>
+                    <h2 style="color:blueviolet ; display: inline-block; font-size:48px">₹1,00,000 </h2><span>+
+                        GST</span>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="bimg1">
+            <h3 style="padding-left: 35px;
+            padding-top: 60px;
+            font-size: 38px;
+            color:whitesmoke">Work Like Top 1% Developers</h3>
+            <div style="text-align: right">
+                <button type="button" class="btn btn-warning mohan"
+                    style="width: 180px;height: 60px;font-size: 20px; ">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row"id="contact" style="background-color:darkblue;">
+        <div class="col-md-2" style="display: flex; justify-content: center; ">
+            <img src="https://www.code-along.the10xacademy.com/assets/codeThrust/code-along-logos/BG-Purple-1.png"
+                alt="" width="100%" height="100px" style="padding-left: 60px; margin-top: 70px;">
+        </div>
+
+        <div class="col-md-4">
+            <h5 style="color: white;padding-left: 30px; margin-top: 25px;">About Us</h5>
+            <p style="padding-left: 30px;color:cornsilk">CodeAlong is India's only <br> personalized Full-Stack Bootcamp
+                <br>with only 2 students per class.<br>Switch from service to product companies <br> with 60% higher
+                salary.<br> It is a 6-month immersive, structured,<br> online 1:2 Full-stack Bootcamp,<br> designed to
+                give you high-quality content<br> by highly-seasoned professionals <br>from some of the top tech
+                companies.
+            </p>
+        </div>
+
+        <div class="col-md-2">
+            <h5 style="color: white;margin-top:25px  ;line-height: 45px;">Program Highlights<br>
+                Admission Process<br>
+                Privacy Policy<br>
+                FAQ<br>
+                Terms and Conditions</h5>
+        </div>
+
+        <div class="col-md-4">
+            <h5 style="color: white;padding-left: 30px; margin-top: 25px;">Contact Us</h5>
+            <p style="color:darkgrey;padding-left:30px">Write to us at :</p>
+            <h5 style="color: white;padding-left: 30px; ">codealong@the10xacademy.com</h5>
+            <p style="color:cornsilk;padding-left: 30px; "><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;7000383641
+            </p>
+
+            <a href="https://www.linkedin.com/in/mohan-kumar-97546a21a/"style="color:cornsilk;padding-left: 30px;font-size: 20px;"><i class="fa-brands fa-linkedin"></i></a>
+
+            <a href=""style="color:cornsilk;font-size: 20px;"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href=""style="color:cornsilk;font-size: 20px;"><i class="fa-brands fa-whatsapp"></i></a>
+
+
+    
+        </div>
+    </div>
+
+</body>
+</html>
